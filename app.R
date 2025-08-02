@@ -1,8 +1,7 @@
 source("scripts/preambulo.R", local = TRUE)
 ui <- fluidPage(
-  
+  shiny::includeCSS("www/style.css"),
   uiOutput("ui_app")
-   
 )
 
 server <- function(input, output) {

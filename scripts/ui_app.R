@@ -1,12 +1,19 @@
 tagList(
-  shiny::includeCSS("datos/style.css"),
+  div(
+    class = "header-container",
+    div(class = "header-title", icon("chart-simple"), "Mi primer Proyecto en Shiny")
+    #img(src = "logo.png", style = "header-logo")
+  ),
   navbarPage(
     title = NULL,
     tabPanel(
-      title = "Pestaña de Prueba"
+      title = "Pestaña 1",
+      wellPanel(
+        
+      )
     ),
     tabPanel(
-      title = "Pestaña de Prueba 2"
+      title = "Pestaña 2"
     )
   )
 )
